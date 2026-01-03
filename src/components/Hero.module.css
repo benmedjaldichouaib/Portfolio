@@ -1,0 +1,58 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* الاسم موحد اللون */
+.name {
+  font-size: 50px;
+  font-weight: 700;
+  color: #4f46e5; /* لون واحد للأسم كامل */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+/* hover effect */
+.name:hover {
+  color: #6366f1; /* يصبح أزرق أفتح */
+  transform: translateY(-3px); /* يرتفع شوي */
+}
+
+/* Animation fade-in */
+.title {
+  margin-top: 12px;
+  font-size: 22px;
+  color: #444;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease 0.2s, transform 1s ease 0.2s;
+}
+
+.desc {
+  margin-top: 16px;
+  max-width: 600px;
+  font-size: 16px;
+  color: #2fc4a1;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease 0.4s, transform 1s ease 0.4s;
+}
+
+/* Class triggered on mount */
+.fadeIn {
+  opacity: 1;
+  
+  transform: translateY(0);
+}
+.h2{
+    opacity: 1;
+  
+    transform: translateY(0);
+    color:#00c4cc;
+}

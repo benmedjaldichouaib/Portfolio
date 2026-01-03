@@ -1,0 +1,33 @@
+/* الحاوية العامة للـ Navbar */
+.navbar {
+  position: fixed;   /* تبقى مثبتة أثناء التمرير */
+  top: 20px;         /* تبعد 20px من الأعلى */
+  right: 20px;       /* تبعد 20px من اليمين */
+  display: flex;     /* ترتيب النقاط بشكل عمودي */
+  flex-direction: column;
+  gap: 12px;         /* مسافة بين كل نقطة والأخرى */
+  z-index: 100;      /* للتأكد من ظهورها فوق باقي العناصر */
+}
+
+/* شكل كل نقطة */
+.dot {
+  width: 16px;                /* عرض النقطة */
+  height: 16px;               /* طول النقطة */
+  background-color: #4f46e5;  /* لون أزرق موحد */
+  border-radius: 50%;         /* لتصبح دائرية */
+  cursor: pointer;            /* يتحول المؤشر عند المرور عليها */
+  transition: transform 0.2s ease, background-color 0.2s ease; /* حركة سلسة عند hover */
+}
+
+/* تأثير عند المرور بالماوس على النقطة */
+.dot:hover {
+  transform: scale(1.3);     /* تكبير النقطة */
+  background-color: #6366f1; /* تصبح أزرق أفتح */
+}
+
+/* النقطة النشطة */
+.active {
+  background-color: #2563eb; /* لون أزرق أقوى للنقطة المحددة */
+  transform: scale(1.3);     /* تبقى مكبرة مثل hover */
+}
+
