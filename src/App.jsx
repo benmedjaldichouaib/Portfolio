@@ -14,36 +14,42 @@ function App() {
 
   return (
     <div id="root">
-      <DigitalRain /> {/* background digital rain */}
-      {/* Navbar */}
-      <Navbar setActiveSection={setActiveSection} activeSection={activeSection} />
+      <DigitalRain />
 
-      {/* Sections */}
-      {activeSection === "hero" && (
-        <section id="hero">
-          <Hero />
-        </section>
-      )}
+      <Navbar
+        setActiveSection={setActiveSection}
+        activeSection={activeSection}
+      />
 
-      {activeSection === "projects" && (
-        <section id="projects">
-          <Projects />
-        </section>
-      )}
+      <main className="app-container">
+        {activeSection === "hero" && (
+          <section id="hero">
+            <Hero />
+          </section>
+        )}
 
-      {activeSection === "skills" && (
-        <section id="skills">
-          <Skills />
-        </section>
-      )}
+        {activeSection === "projects" && (
+          <section id="projects">
+            <Projects />
+          </section>
+        )}
 
-      {activeSection === "contact" && (
-        <section id="contact">
-          <Contact />
-        </section>
-      )}
+        {activeSection === "skills" && (
+          <section id="skills">
+            <Skills />
+          </section>
+        )}
+
+        {activeSection === "contact" && (
+          <section id="contact">
+            <Contact />
+          </section>
+        )}
+      </main>
     </div>
   );
 }
 
+
 export default App;
+
