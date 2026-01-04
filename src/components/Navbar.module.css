@@ -4,7 +4,7 @@
   top: 15%;
   right: 24px;
   transform: translateY(-50%);
-  display: flex;
+  display: gap 20px;
   flex-direction: column;
   gap: 20px;
   z-index: 100;
