@@ -54,47 +54,7 @@
 
 /* Active state */
 .active {
-  transform: translateX(-6px) scale(1.08);
-}
-
-.active .icon {
-  transform: scale(1.3);
-}
-
-.active .label {
-  font-weight: 600;
-}
-
-.active .line {
-  height: 100%;
-}
-
-/* 🎨 Colors per section */
-.home {
-  color: #2563eb;
-}
-.home .line {
-  background-color: #2563eb;
-}
-
-.projects {
-  color: #7c3aed;
-}
-.projects .line {
-  background-color: #7c3aed;
-}
-
-.skills {
-  color: #16a34a;
-}
-.skills .line {
-  background-color: #16a34a;
-}
-
-.contact {
-  color: #f97316;
-}
-.contact .line {
-  background-color: #f97316;
+  background-color: #2563eb; /* لون أزرق أقوى للنقطة المحددة */
+  transform: scale(1.3);     /* تبقى مكبرة مثل hover */
 }
 
