@@ -58,3 +58,29 @@
   transform: scale(1.3);     /* تبقى مكبرة مثل hover */
 }
 
+/* Colors */
+.home .icon,
+.home .label.active {
+  color: #4f46e5; /* أزرق */
+}
+
+.projects .icon,
+.projects .label.active {
+  color: #16a34a; /* أخضر */
+}
+
+.skills .icon,
+.skills .label.active {
+  color: #f59e0b; /* برتقالي */
+}
+
+.contact .icon,
+.contact .label.active {
+  color: #dc2626; /* أحمر */
+}
+
+/* Active state: color applied to label */
+.navItem.active .label {
+  font-weight: 600;
+}
+
